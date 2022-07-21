@@ -1,0 +1,310 @@
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Helvetica, Arial,  sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+.text_white{
+    color: #fff !important;
+}
+
+
+
+#header{
+    --heightnav :46px;
+    height: var(--heightnav);
+    background-color: #000;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+#nav , .subnav{
+    list-style-type: none;
+
+}
+
+#nav > li{
+    
+    display: inline-block;
+    position: relative;
+}
+#nav > li:hover> a ,
+#nav .subnav li:hover
+{ 
+    background-color: #ccc; 
+    color: #000; 
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+
+    line-height: var(--heightnav);
+    padding: 0 24px;
+    display: block;
+    position: relative;
+
+}
+
+#nav Li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    top:var(--heightnav);
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.3) ;
+}
+#nav .subnav a{ 
+    color: #000;
+    padding: 0 10px;
+    line-height: 38px;
+}
+
+
+#nav .subnav a{
+    color: #000;
+}
+
+
+
+
+#nav .nav_icon_down{
+    font-size: 14px;
+
+}
+#header .search_icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: var(--heightnav);
+}
+.search_btn{
+    float: right;
+    padding: 0  21px;
+    cursor: pointer;
+}
+
+.search_btn:hover{
+    background-color: #f44336;
+}
+
+
+
+
+
+/* ************************************************************************ */
+
+
+
+
+
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("/assets/slider/slider1.jpg") top center / cover no-repeat ;
+}
+#slider .text_conten{
+    width: 100%;
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    /* left: 50% ;
+    transform:  translateX(-50%); */
+    text-align: center;
+
+}
+
+#slider .text_head{
+    font-weight: 500;
+
+}
+
+#slider .text_descrpision{
+    margin-top: 24px;
+
+}
+
+
+
+/* ************************************************************************ */
+
+#content{
+    width: 100%;
+}
+#content .content_section{
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+
+}
+#content .section_heading{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section_sub_heading{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0px;
+    opacity: 0.6;
+    font-style: italic;
+
+} 
+
+#content .about_text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22.5px ;
+
+}
+
+#content .menber_list{
+    padding: 32px 0px ;
+    display: flex;
+}
+
+#content .member_item{
+    /* float: left; */
+    width:33.3333%;
+    text-align: center;
+    
+}
+#content .member_name{
+    font-size: 15px;
+}
+#content .member_img{
+    width: 154px;
+    margin-top: 15px;
+    border-right: 5px;
+}
+
+/* ****************tour ******************** */
+.tour_section{
+    background-color: #000;
+}
+
+.tickets_list{
+    background-color: #fff;
+    margin: 40px 0px;
+}
+
+.tickets_list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style:none;
+}
+.tickets_list .sold_out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+    border-radius: 3px;
+
+}
+.tickets_list .quantity{
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+
+/* ***************** */
+.place_list{
+    margin: 32px -8px 48px;
+    display: block;
+
+}
+
+.place_item{
+    width: 33.333%;
+    float: left;
+    padding: 0 8px;
+
+}
+
+.place_img{
+    width: 100%;
+    display: block;
+}
+.place_img:hover{
+    opacity: 0.6;
+}
+
+.place_body{
+    padding: 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.place_heading{
+    font-size:15px;
+    font-weight: 550;
+
+}
+
+.place_time{
+    margin: 15px 0;
+    color: #757575;
+}
+
+.place_desc{
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.place_buy_btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px ;
+    display:inline-block;
+
+}
+.place_buy_btn:hover{
+    background-color: #ccc;
+}
+
+
+/* ************************************************************************ */
+
+#footter{
+    height: 400px;
+
+}
