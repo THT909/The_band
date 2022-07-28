@@ -4,9 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* **************************custom css******************************** */
 html{
     font-family:Helvetica, Arial,  sans-serif;
+    scroll-behavior: smooth
+}
+.icon_web{
+    color: #ccc;
 }
 .clear{
     clear: both;
@@ -16,7 +20,56 @@ html{
     color: #fff !important;
 }
 
+.text-center{
+    text-align: center !important;
+}
 
+.row{
+    margin-left:-8px;
+    margin-right:-8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt_8{
+    margin-top: 8px !important;
+}
+.mt_16{
+    margin-top: 16px !important;
+}
+
+.col{
+    float:left;
+    padding-left:8px;
+    padding-right:8px;
+}
+.col-thir{
+    width:33.33333333% ;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.pull_right{
+    float: right;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px ;
+    display:inline-block;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+/* ************************************************************8 */
 
 #header{
     --heightnav :46px;
@@ -159,7 +212,7 @@ html{
 #content .content_section{
     width: 800px;
     margin: 0 auto;
-    padding: 64px 16px;
+    padding: 64px 0px 112px;
 
 }
 #content .section_heading{
@@ -192,12 +245,6 @@ html{
     display: flex;
 }
 
-#content .member_item{
-    /* float: left; */
-    width:33.3333%;
-    text-align: center;
-    
-}
 #content .member_name{
     font-size: 15px;
 }
@@ -247,16 +294,8 @@ html{
 
 /* ***************** */
 .place_list{
-    margin: 32px -8px 48px;
+    margin: 32x 0px 0px 0px ;
     display: block;
-
-}
-
-.place_item{
-    width: 33.333%;
-    float: left;
-    padding: 0 8px;
-
 }
 
 .place_img{
@@ -289,25 +328,67 @@ html{
     line-height: 1.4;
 }
 
-.place_buy_btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 8px 16px ;
-    display:inline-block;
+
+
+/* *******************contac******************8 */
+.contact_content{
+    margin-top: 48px;
+}
+.contact_info{
+    font-size: 18px;
+    line-height:27px ;
+}
+.contact_info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    
+}
+
+.contact_form{
+    font-size: 15px;
 
 }
-.place_buy_btn:hover{
-    background-color: #ccc;
+.contact_content .form_control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
 }
-
+.map_section img {
+    width: 100%;
+}
 
 /* ************************************************************************ */
 
-#footter{
-    height: 400px;
+#footer{
+    padding: 64px 16px ;
+    text-align: center;
+    line-height: 36px;
+}
+
+
+#footer .socials_list{
+    font-size: 22px;
+    
+}
+#footer .socials_list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
 
 }
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+
+}
+#footer .copyright a:hover,
+#footer .socials_list a:hover{
+    color: rgba(0,0,0,0.4);
+
+}
+
 /* ************************************************************************* */
 
 .modal{

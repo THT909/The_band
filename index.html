@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/pinned-octocat.svg">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
 </head>
@@ -15,18 +16,18 @@
         <div id="header">
             <!-- begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                 <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="#">More
                         <i class="nav_icon_down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -46,27 +47,27 @@
 <!-- ***********************************Contentt*************************************** -->
 
         <div id="content">
-            <div class="content_section">
+            <div id="band" class="content_section">
                 <h2 class="section_heading">The band</h2>
                 <p class="section_sub_heading">We love music</p>
                 <p class="about_text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="menber_list">
-                    <div class="member_item">
+                <div class="row menber_list">
+                    <div class="text-center col col-thir">
                         <p class="member_name">Name</p>
                         <img src="./assets/band/member1.jpg" alt="Name" class="member_img">
                     </div>
-                    <div class="member_item">
+                    <div class="text-center col col-thir">
                         <p class="member_name">Name</p>
                         <img src="./assets/band/member1.jpg" alt="Name" class="member_img">
                     </div>
-                    <div class="member_item">
+                    <div class="text-center col col-thir">
                         <p class="member_name">Name</p>
                         <img src="./assets/band/member1.jpg" alt="Name" class="member_img">
                     </div>
                 </div>
             </div>
             <!-- **************** -->
-            <div class="tour_section">
+            <div id="tour" class="tour_section">
                 <div class="content_section">
                     <h2 class="section_heading text_white">TOUR DATES</h2>
                     <p class="section_sub_heading text_white">Remember to book your tickets!</p>
@@ -76,55 +77,92 @@
                         <li>Octobe <span class="sold_out">Sold out</span> </li>
                         <li>November <span class="quantity">4</span> </li>
                     </ul>
-                    <div class="place_list">
-                        <div class="place_item">
+                    <div class=" row place_list">
+                        <div class="col-thir col">
                             <img src="./assets/place/newyork.jpg" alt="" class="place_img">
                             <div class="place_body">
                                 <h3 class="place_heading">New York</h3>
                                 <p class="place_time">Fri 27 Nov 2022 </p> 
                                 <p class="place_desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_btn js-buy ">Buy Tickets</button>
+                                <button class="btn js-buy ">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place_item">
+                        <div class="col-thir col">
                             <img src="./assets/place/paris.jpg" alt="" class="place_img">
                             <div class="place_body">
                                 <h3 class="place_heading">New York</h3>
                                 <p class="place_time">Fri 29 Nov 2022 </p> 
                                 <p class="place_desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_btn js-buy ">Buy Tickets</button>
+                                <button class="btn js-buy ">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place_item">
+                        <div class="col-thir col">
                             <img src="./assets/place/sanfran.jpg" alt="" class="place_img">
                             <div class="place_body">
                                 <h3 class="place_heading">New York</h3>
                                 <p class="place_time">Fri 29 Nov 2022 </p> 
                                 <p class="place_desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_btn js-buy ">Buy Tickets</button>
+                                <button class="btn js-buy ">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
-            <!-- ******************** -->
-            <div class="content_section">
+            <!-- ******************************************************** -->
+            <div id="contact" class="content_section">
                 <h2 class="section_heading">CONTACT</h2>
                 <p class="section_sub_heading">Fan? Drop a note!</p>
 
-            </div>
-            
+                <div class="row contact_content">
+                    <div class="col col-half contact_info ">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact_form">
+                        <form action="">
+                            <div class="row">
+                                <div class=" col col-half">
+                                    <input required type="text" placeholder="Name" class="form_control">
+                                </div>
+                                <div class=" col col-half">
+                                    <input required type="email" placeholder="Email" class="form_control">
+                                </div>
+                            </div>
+                            <div class="row mt_8">
+                                <div class=" col col-full">
+                                    <input required type="text" placeholder="Message" class="form_control">
+                                </div>
+                            </div>
 
+                            <input class="btn pull_right mt_16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="map_section">
+                <img src="./assets/img/map.jpg" alt="" class="map_img">
+            </div>
 
             
         </div>
 <!-- ***********************************Footter *************************************** -->
 
-        <div id="footter">
-
+        <div id="footer">
+            <div class="socials_list">
+                <a href="https://www.facebook.com/people/Hi%E1%BB%87p-Th%C3%A0nh/100009306006091/"><i class="ti-facebook "></i></a>
+                <a href="https://github.com/THT909"><i class="ti-github "></i></a>
+                <a href=""><i class="ti-instagram "></i></a>
+                <a href=""><i class="ti-pinterest "></i></a>
+                <a href=""><i class="ti-twitter "></i></a>
+                <a href=""><i class="ti-linkedin "></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.facebook.com/people/Hi%E1%BB%87p-Th%C3%A0nh/100009306006091/">Hiệp Thành</a></p>
         </div>
-    </div>
+    </div> 
+
 
     <!-- *************************** -->
     <div class="modal js-modal">
